@@ -1,0 +1,10 @@
+^C:\USERS\CALKNA\DOCUMENTS\P300 SOFTWARE DESIGN\TESTCODE\BUILD\CMAKEFILES\B82C4734929380F2A508FEF01DF281E5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/calkna/Documents/P300 Software Design/TestCode" "-BC:/Users/calkna/Documents/P300 Software Design/TestCode/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/calkna/Documents/P300 Software Design/TestCode/build/TestCode.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
